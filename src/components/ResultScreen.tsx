@@ -1,0 +1,5 @@
+import { ImageName, imagePath } from "../enums/images";
+import { TestResult } from "../types";
+import { ReactElement } from "react";
+type Props = { result: TestResult };
+export function ResultScreen({ result }: Props): ReactElement { return <main className="result-page"><img className="header-logo header-logo--result" src={imagePath(ImageName.HeaderLogo)} alt="Похудей ка" /><img className="congratulation" src={imagePath(ImageName.Congratulation)} alt="Ура! Считаем твой результат" /><section className="result-content"><img className="result-card__image" src={imagePath(result.image)} alt={`Результат теста: ${result.title}`} /><p className="result-lead">{result.description}</p><p>{result.recommendation}</p><a className="result-link" href="https://leonov-chef.com/pohodeyka?utm_source=calen&utm_medium=prodaja&utm_campaign=pohodeyka&utm_content=link"><img src={imagePath(ImageName.LinkButton)} alt="Хочу худеть легко уже сейчас" /></a></section><footer className="footer"><img src={imagePath(ImageName.FooterInfo)} alt="Информация о программе Похудей ка" /></footer></main>; }

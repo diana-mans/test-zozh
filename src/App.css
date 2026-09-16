@@ -1,0 +1,31 @@
+.test-page,.result-page{min-height:100vh;background:var(--color-page);color:var(--color-navy)}
+.hero{box-sizing:border-box;width:min(100% - 40px,620px);margin:0 auto;padding:22px 0 22px;text-align:center;background:var(--color-page)}
+.header-logo{display:block;width:min(100%,350px);height:auto;margin:0 auto}.test-description{display:block;width:min(100%,520px);height:auto;margin:25px auto 0}
+.brand{position:relative;z-index:1;display:inline-flex;align-items:center;gap:9px;font-family:var(--font-display);font-size:15px;color:var(--color-navy)}.brand__mark{display:grid;place-items:center;width:35px;height:35px;border:1px solid currentColor;border-radius:7px;font:700 11px var(--font-base)}
+.test-content{width:min(100% - 40px,620px);margin:0 auto;padding:18px 0 70px}.progress{position:sticky;top:0;z-index:2;height:5px;margin-bottom:30px;overflow:hidden;border-radius:99px;background:var(--color-sand)}.progress__fill{height:100%;border-radius:inherit;background:var(--color-green);transition:width .25s ease}
+
+.question-card{padding:24px 0 18px}
+
+.question-card__heading{display:flex;align-items:center;gap:11px;margin:0 0 16px -8px}
+
+.question-card__number-wrap{display:grid;flex:0 0 59px;place-items:center;width:59px;height:59px;border-radius:50%;background:var(--color-gold-light)}
+
+.question-card__number{width:51px;height:63px;object-fit:contain}
+
+.question-card h2{margin:0;color:var(--color-navy);font:300 clamp(18px,4.5vw,24px)/1.06 var(--font-base); font-weight:300}
+.question-card__options{display:grid;gap:8px}
+.answer-option{display:flex;align-items:center;gap:16px;width:100%;min-height:49px;padding:10px 16px;border:0;border-radius:999px;color:var(--color-text-muted);text-align:left;font:300 clamp(14px,3.7vw,17px)/1.15 var(--font-base);background:var(--color-option);cursor:pointer;transition:background .18s ease,transform .18s ease}
+.answer-option:hover{transform:translateX(3px);background:var(--color-option-hover)}
+.answer-option:focus-visible,.primary-button:focus-visible,.text-button:focus-visible{outline:3px solid var(--color-green);outline-offset:3px}
+.answer-option--selected{color:var(--color-navy);background:var(--color-option); font-weight: 500}
+.answer-option__letter{flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:var(--color-page)}.answer-option--selected 
+.answer-option__letter{background:var(--color-gold)}
+
+.interlude{width:min(100%,390px);margin:20px auto 10px;padding:7px}.interlude {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 24px;
+}.submit-section{padding:36px 0 0;text-align:center;font:600 15px var(--font-base)}.primary-button{display:inline-block;margin-top:13px;padding:15px 24px;border:0;border-radius:99px;color:var(--color-page);text-align:center;text-decoration:none;font:700 15px var(--font-base);background:var(--color-burgundy);cursor:pointer}.primary-button:disabled{opacity:.45;cursor:not-allowed}
+.result-page{display:flex;flex-direction:column;align-items:center;padding:24px 16px 0}.header-logo--result{width:min(100%,270px)}.congratulation{display:block;width:min(100%,520px);height:auto;margin:28px auto 10px}.result-content{width:min(100%,520px);padding:0 4px 38px;text-align:center}.result-card__image{display:block;width:100%;height:auto;margin:0 auto 24px}.result-content p{margin:0 0 17px;color:var(--color-navy);font:500 15px/1.55 var(--font-base);font-weight:300}.result-content .result-lead{font-weight:700;font-size:18px;line-height:1.25}.result-link{display:block;width:min(100%,370px);margin:22px auto 0}.result-link img{display:block;width:100%;height:auto}.footer{width:100%;padding:24px 0;border-top:1px solid var(--color-sand);text-align:center}.footer img{display:block;width:min(100%,420px);height:auto;margin:0 auto}
+@media(min-width:720px){.hero{padding-top:28px;padding-bottom:30px}.header-logo{width:430px}.test-content{padding-top:30px}.question-card{padding:29px 0 21px}.question-card__number-wrap{flex-basis:67px;width:67px;height:67px}.question-card__number{width:60px;height:70px}.answer-option{min-height:58px;padding:12px 20px}.interlude{margin:25px auto 14px}}
