@@ -1,19 +1,19 @@
 export enum ImageName {
-  Placeholder = "1.png",
-  HeaderLogo = "elements/logo-header.png",
-  TestDescription = "elements/test-description.png",
-  FooterInfo = "elements/info-footer.png",
-  Congratulation = "elements/congratulation.png",
-  Theorist = "elements/theorist.png",
-  Tired = "elements/tired.png",
-  Perfectionist = "elements/perfectionist.png",
-  Disrupt = "elements/disrupt.png",
-  LinkButton = "elements/link_button.png",
-  DontStop = "elements/dont-stop.png",
-  Almost = "elements/almost.png",
+  Placeholder = "1.webp",
+  HeaderLogo = "elements/logo-header.webp",
+  TestDescription = "elements/test-description.webp",
+  FooterInfo = "elements/info-footer.webp",
+  Congratulation = "elements/congratulation.webp",
+  Theorist = "elements/theorist.webp",
+  Tired = "elements/tired.webp",
+  Perfectionist = "elements/perfectionist.webp",
+  Disrupt = "elements/disrupt.webp",
+  LinkButton = "elements/link_button.webp",
+  DontStop = "elements/dont-stop.webp",
+  Almost = "elements/almost.webp",
 }
 
-export const imagePath = (name: ImageName): string => `/images/${name}`;
+export const imagePath = (name: ImageName): string => `${process.env.PUBLIC_URL}/images/${name}`;
 
 export const questionImagePath = (questionId: number): string =>
-  `/images/elements/question-${questionId}.png`;
+  `${process.env.PUBLIC_URL}/images/elements/question-${questionId}.webp`;

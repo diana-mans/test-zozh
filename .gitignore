@@ -25,5 +25,7 @@ yarn-error.log*
 /.claude
 /.codestudio
 /.grok
+.env.development
+.env.production
 
 AGENTS.md

@@ -20,7 +20,10 @@ function App(): ReactElement {
     {[3].includes(question.id) && <img className="interlude" src={imagePath(ImageName.DontStop)} alt="Иллюстрация женщины" />}
     {[6].includes(question.id) && <img className="interlude" src={imagePath(ImageName.Almost)} alt="Иллюстрация женщины" />}
   
-  </div>)}<section className="submit-section"><p>{canSubmit ? "Все ответы готовы" : `Ответь ещё на ${questions.length - answered} вопросов`}</p><button type="button" className="primary-button" disabled={!canSubmit} onClick={(): void => { setShowResult(true); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Получить результат теста</button></section></div></main>;
+  </div>)}<section className="submit-section">
+      {/* <p>{canSubmit ? "Все ответы готовы" : `Ответь ещё на ${questions.length - answered} вопросов`}</p> */}
+      <img className="congratulation" src={imagePath(ImageName.Congratulation)} alt="Ура! Считаем твой результат" />
+      <button type="button" className="primary-button" disabled={!canSubmit} onClick={(): void => { setShowResult(true); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Получить результат теста</button></section></div><footer className="footer"><img src={imagePath(ImageName.FooterInfo)} alt="Информация о программе Похудей ка" /></footer></main>;
 }
 
 export default App;
